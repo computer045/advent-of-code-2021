@@ -1,4 +1,4 @@
-def number_of_depth_increase(depths)
+def part1(depths)
   previous = -1
   cmpt = 0
   depths.each do |measurement|
@@ -11,7 +11,7 @@ def number_of_depth_increase(depths)
   return cmpt
 end
 
-def number_of_sum_depth_increase(depths)
+def part2(depths)
   window = []
   previous = -1
   cmpt = 0
@@ -34,8 +34,8 @@ end
 
 def main
   depths = File.readlines('./input.txt').map(&:to_i)
-  puts number_of_depth_increase(depths)
-  puts number_of_sum_depth_increase(depths)
+  puts part1(depths)
+  puts part2(depths)
 end
 
 main
