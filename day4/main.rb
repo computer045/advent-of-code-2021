@@ -99,9 +99,6 @@ def calculate_score(board, numbers)
         end
     end
 
-    #puts marked_score
-    #puts unmarked_score
-
     return (unmarked_score - marked_score) * numbers.last.to_i
 end
 
