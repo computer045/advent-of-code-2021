@@ -6,12 +6,12 @@ All of the code is in Ruby.
 
 ## Puzzle list
 
-- [x] Day 1
-- [x] Day 2
-- [x] Day 3
-- [x] Day 4
-- [x] Day 5
-- [x] Day 6
+- [x] Day 1: Sonar Sweep
+- [x] Day 2: Dive!
+- [x] Day 3: Binary Diagnostic
+- [x] Day 4: Giant Squid
+- [x] Day 5: Hydrothermal Venture
+- [x] Day 6: Lanternfish
 - [ ] Day 7
 - [ ] Day 8
 - [ ] Day 9
