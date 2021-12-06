@@ -116,7 +116,7 @@ def main
   input = File.readlines('./input.txt')
   numbers = input.shift.gsub("\n", '').split(',')
   boards = get_boards_array(input)
-    
+
   wins = get_boards_wins(boards, numbers).sort_by { |w| w[:step] }
   puts part1(boards, numbers, wins.first)
   puts part2(boards, numbers, wins.last)
