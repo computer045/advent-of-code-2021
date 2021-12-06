@@ -1,6 +1,6 @@
 class Point
   attr_reader :x, :y
-
+  
   def initialize(x, y)
     @x = x
     @y = y
@@ -8,10 +8,6 @@ class Point
 
   def to_s
     return "(#{@x}, #{@y})"
-  end
-
-  def eql?(other)
-    return (@x == other.x and @y == other.y)
   end
 end
 
@@ -21,6 +17,7 @@ class Vector
   def initialize(point1, point2)
     @point1 = point1
     @point2 = point2
+    
     if point1.x == point2.x then
       @direction = :vertical
     elsif point1.y == point2.y then
