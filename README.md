@@ -1,5 +1,7 @@
 # Advent of code 2021
 
+https://adventofcode.com/2021
+
 It's my first time trying to do all of the puzzles. Hope it goes well.
 
 All of the code is in Ruby.
