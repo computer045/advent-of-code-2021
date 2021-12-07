@@ -14,7 +14,7 @@ All of the code is in Ruby.
 - [x] Day 4: Giant Squid
 - [x] Day 5: Hydrothermal Venture
 - [x] Day 6: Lanternfish
-- [ ] Day 7
+- [x] Day 7: The Treachery of Whales
 - [ ] Day 8
 - [ ] Day 9
 - [ ] Day 10
