@@ -15,7 +15,7 @@ All of the code is in Ruby.
 - [x] Day 5: Hydrothermal Venture
 - [x] Day 6: Lanternfish
 - [x] Day 7: The Treachery of Whales
-- [ ] Day 8
+- [x] Day 8: Seven Segment Search
 - [ ] Day 9
 - [ ] Day 10
 - [ ] Day 11
