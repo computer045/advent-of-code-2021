@@ -16,7 +16,7 @@ All of the code is in Ruby.
 - [x] Day 6: Lanternfish
 - [x] Day 7: The Treachery of Whales
 - [x] Day 8: Seven Segment Search
-- [ ] Day 9
+- [x] Day 9: Smoke Basin
 - [ ] Day 10
 - [ ] Day 11
 - [ ] Day 12
