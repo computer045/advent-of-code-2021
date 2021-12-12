@@ -72,7 +72,7 @@ def main
   input = File.readlines('./input.txt').map(&:chomp).map {|l| l.chars }
   lava_tubes1 = input.map{ |c| c.map(&:to_i) }
   lava_tubes2 = lava_tubes1.map(&:clone)
-  p part1(lava_tubes1)
+  puts part1(lava_tubes1)
   puts part2(lava_tubes2)
 end
 
