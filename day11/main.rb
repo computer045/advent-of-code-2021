@@ -71,7 +71,6 @@ def energize_around(octopuses, pos_x, pos_y)
       end
     end
   end
-
   return octopuses
 end
 
@@ -85,33 +84,40 @@ def part1(octopuses, nb_steps)
       count += column.flashes
     end
   end
-
   return count
   #return octopuses.map{|l| l.map(&:to_s) }
 end
 
-def part2(input)
-  return 0
+def is_full_flash?(step_octo)
+  count = 0
+  step_octo.each do |line|
+    line.each do |column|
+      if column.energy == 0 then
+        count += 1
+      end
+    end
+  end
+  return count == (step_octo.count * step_octo[0].count)
+end
+
+def part2(octopuses)
+  flash_step = -1
+  index = 0
+  while flash_step == -1 do
+    octopuses = propagate(step(octopuses))
+    index += 1
+    if is_full_flash?(octopuses) then
+      flash_step = index
+    end
+  end
+  return index
 end
 
 def main
-  input = File.readlines('./input.txt').map(&:chomp).map {|l| l.chars }.map{ |s| s.map { |c| Octopus.new(c.to_i) } }
-  small_input = <<~TEXT
-    5483143223
-    2745854711
-    5264556173
-    6141336146
-    6357385478
-    4167524645
-    2176841721
-    6882881134
-    4846848554
-    5283751526
-  TEXT
-  small_input = small_input.split("\n").map(&:chomp).map {|l| l.chars }.map{ |s| s.map { |c| Octopus.new(c.to_i) } }
-  puts part1(input, 100)
-  #pp part1(small_input, 100)
-  #puts part2(input)
+  octopuses1 = File.readlines('./input.txt').map(&:chomp).map {|l| l.chars }.map{ |s| s.map { |c| Octopus.new(c.to_i) } }
+  octopuses2 = octopuses1.map{ |l| l.map(&:clone) }
+  puts part1(octopuses1, 100)
+  puts part2(octopuses2)
 end
 
 main
