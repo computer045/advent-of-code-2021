@@ -18,7 +18,7 @@ All of the code is in Ruby.
 - [x] Day 8: Seven Segment Search
 - [x] Day 9: Smoke Basin
 - [x] Day 10: Syntax Scoring
-- [ ] Day 11
+- [x] Day 11: Dumbo Octopus
 - [ ] Day 12
 - [ ] Day 13
 - [ ] Day 14
